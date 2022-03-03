@@ -1,6 +1,7 @@
 import React from "react";
 import Tsuro from "../resources/tsuro.png";
 import Carcassonne from "../resources/carcassonne.png";
+import Connect4 from "../resources/connect4.png";
 
 export default function App() {
     return (
@@ -26,13 +27,13 @@ export default function App() {
                             </div>
                             <div className="font-bold text-xs">Carcassonne</div>
                         </a>
-                        {/* <a href={ `${ window.location.protocol }//carcassonne.quibbble.com` } className="flex flex-col items-center">
+                        <a href={ `${ window.location.protocol }//connect4.quibbble.com` } className="flex flex-col items-center">
                             <div className="w-20 h-20 mb-1 overflow-hidden">
-                                <img className="w-full h-full" src={Carcassonne} alt="Carcassonne"/>
+                                <img className="w-full h-full" src={Connect4} alt="Connect4"/>
                             </div>
-                            <div className="font-bold text-xs">Example</div>
+                            <div className="font-bold text-xs">Connect4</div>
                         </a>
-                        <a href={ `${ window.location.protocol }//carcassonne.quibbble.com` } className="flex flex-col items-center">
+                        {/* <a href={ `${ window.location.protocol }//carcassonne.quibbble.com` } className="flex flex-col items-center">
                             <div className="w-20 h-20 mb-1 overflow-hidden">
                                 <img className="w-full h-full" src={Carcassonne} alt="Carcassonne"/>
                             </div>
