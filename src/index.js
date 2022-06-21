@@ -1,12 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import App from "./components/App";
-import Scaling from "./components/Scaling";
-import "./index.css"
+import Routing from "./components/Routing";
+import "./index.css";
 
-render(
-    <Scaling>
-        <App />
-    </Scaling>,
-    document.getElementById("root")
-    );
+render(<Routing />, document.getElementById("root"))
