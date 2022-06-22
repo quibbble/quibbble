@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col items-center m-8 md:p-12">
+        <div className="flex flex-col items-center m-8 md:m-12">
             <div className="w-full max-w-2xl">
                 <Navbar />
                 <div className="fade-in pt-12">

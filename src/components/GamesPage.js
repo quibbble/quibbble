@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function GamesPage() {
     return (
-        <div className="flex flex-col items-center m-8 md:p-12">
+        <div className="flex flex-col items-center m-8 md:m-12">
             <div className="w-full max-w-2xl flex flex-col items-center">
                 <Navbar />
                 <div className="mt-12 fade-in w-72 flex flex-col items-center">
