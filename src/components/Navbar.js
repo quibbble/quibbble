@@ -9,6 +9,10 @@ export default function Navbar() {
             </Link>
             <div className="flex items-center">
                 <span className="flex items-center font-bold">
+                    <Link to="/game-requests">Requests</Link>
+                </span>
+                <p className="mx-2 md:mx-4">/</p>
+                <span className="flex items-center font-bold">
                     <Link to="/games">Games</Link>
                 </span>
             </div>

@@ -16,7 +16,7 @@ export default function HomePage() {
                     </Link>
                 </div>
             </div>
-            <div className="absolute bottom-8 md:bottom-12">
+            <div className="absolute bottom-8 md:bottom-12 flex flex-col items-center">
                 <Footer />
             </div>
         </div>
