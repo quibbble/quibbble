@@ -7,7 +7,7 @@ export default function GamesPage() {
             <div className="w-full max-w-2xl flex flex-col items-center">
                 <Navbar />
                 <div className="mt-12 fade-in w-72 flex flex-col items-center">
-                    <div className="flex gap-2 md:gap-4 self-center mb-2">
+                    <div className="flex gap-2 md:gap-4 self-center mb-6">
                         <a href={ `${ window.location.protocol }//tsuro.quibbble.com` } className="flex flex-col items-center" target="_blank" rel="noreferrer">
                             <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-red-500 border-2 box-border">
                                 <div className="w-18 h-18 mb-1">
@@ -61,17 +61,50 @@ export default function GamesPage() {
                             <div className="font-bold title text-blue-300">Stratego</div>
                         </a>
                     </div>
-                    <div className="flex gap-4 self-start">
-                        {/* <a href={ `${ window.location.protocol }//carcassonne.quibbble.com` } className="flex flex-col items-center">
-                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-3xl border-red-600 border-2 box-border">
+                    <div className="flex gap-2 md:gap-4 self-center mb-6">
+                        <a href={ `${ window.location.protocol }//indigo.quibbble.com` } className="flex flex-col items-center">
+                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-indigo-500 border-2 box-border">
+                                <div className="w-18 h-18 mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> 
+                                    <polygon className="fill-indigo-500" points="0 59.7 0 85.61 23.39 98.56 46.77 85.61 46.77 59.7 23.39 46.74 0 59.7"/>
+                                    <polygon className="fill-indigo-500" points="53.23 59.7 53.23 85.61 76.61 98.56 100 85.61 100 59.7 76.61 46.74 53.23 59.7"/>
+                                    <polygon className="fill-indigo-500" points="26.61 14.39 26.61 40.3 50 53.26 73.39 40.3 73.39 14.39 50 1.44 26.61 14.39"/>
+                                    <rect fillOpacity={0} width="100" height="100"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <div className="font-bold title text-indigo-300">Indigo</div>
+                        </a>
+                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
+                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
                                 <div className="w-18 h-18 mb-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                        ...
+                                        <rect fillOpacity={0} width="100" height="100"/>
                                     </svg>
                                 </div>
                             </div>
-                            <div className="font-bold text-xs">Example</div>
-                        </a> */}
+                            <div className="font-bold title text-neutral-300">Example</div>
+                        </span>
+                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
+                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
+                                <div className="w-18 h-18 mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                        <rect fillOpacity={0} width="100" height="100"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className="font-bold title text-neutral-300">Example</div>
+                        </span>
+                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
+                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
+                                <div className="w-18 h-18 mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                        <rect fillOpacity={0} width="100" height="100"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className="font-bold title text-neutral-300">Example</div>
+                        </span>
                     </div>
                 </div>
             </div>
