@@ -62,7 +62,7 @@ export default function GamesPage() {
                         </a>
                     </div>
                     <div className="flex gap-2 md:gap-4 self-center mb-6">
-                        <a href={ `${ window.location.protocol }//indigo.quibbble.com` } className="flex flex-col items-center">
+                        <a href={ `${ window.location.protocol }//indigo.quibbble.com` } className="flex flex-col items-center" target="_blank" rel="noreferrer">
                             <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-indigo-500 border-2 box-border">
                                 <div className="w-18 h-18 mb-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> 
@@ -75,7 +75,19 @@ export default function GamesPage() {
                             </div>
                             <div className="font-bold title text-indigo-300">Indigo</div>
                         </a>
-                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
+                        <a href={ `${ window.location.protocol }//tictactoe.quibbble.com` } className="flex flex-col items-center" target="_blank" rel="noreferrer">
+                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-green-600 border-2 box-border">
+                                <div className="w-18 h-18 mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                        <polygon className="fill-green-600" points="51.24 25.23 45.75 25.23 36.55 25.23 35.02 25.23 34.18 26.5 25.67 39.25 17.12 26.49 16.27 25.23 14.75 25.23 5.49 25.23 0 25.23 3.16 29.72 17.63 50.31 3.65 70.29 .51 74.77 5.98 74.77 15.25 74.77 16.77 74.77 17.62 73.5 25.67 61.39 33.68 73.49 34.52 74.77 36.05 74.77 45.26 74.77 50.73 74.77 47.59 70.29 33.61 50.31 48.08 29.72 51.24 25.23"/>
+                                        <path className="fill-green-600" d="m98.27,40.95c-1.15-2.98-2.78-5.68-4.85-8.03-2.09-2.37-4.63-4.31-7.57-5.76-3-1.49-6.35-2.24-9.94-2.24s-6.78.7-9.78,2.08c-2.96,1.36-5.56,3.23-7.72,5.56-2.14,2.3-3.84,4.98-5.06,7.97-1.23,3-1.85,6.19-1.85,9.47s.58,6.25,1.73,9.24c1.15,2.99,2.8,5.69,4.9,8.02,2.11,2.35,4.68,4.25,7.61,5.66,2.99,1.44,6.34,2.16,9.97,2.16s6.78-.7,9.78-2.08c2.96-1.36,5.55-3.22,7.69-5.53,2.12-2.29,3.81-4.95,5-7.92,1.2-2.98,1.81-6.16,1.81-9.43,0-3.09-.58-6.18-1.73-9.17Zm-22.48-2.73c1.54,0,2.86.29,4.05.9,1.23.62,2.24,1.44,3.08,2.48.88,1.09,1.57,2.38,2.05,3.82.49,1.47.75,3.01.75,4.58s-.24,3.02-.7,4.48c-.45,1.42-1.12,2.71-2,3.84-.85,1.09-1.87,1.94-3.11,2.6-1.18.63-2.53.93-4.12.93s-2.91-.3-4.09-.91c-1.24-.64-2.26-1.47-3.1-2.53-.87-1.08-1.55-2.36-2.01-3.79-.48-1.47-.72-3.02-.72-4.61s.24-3.02.7-4.48c.45-1.42,1.11-2.7,1.97-3.8.83-1.06,1.84-1.9,3.09-2.56,1.2-.63,2.57-.94,4.17-.94Z"/>
+                                        <rect fillOpacity={0} width="100" height="100"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className="font-bold title text-green-600">TicTacToe</div>
+                        </a>
+                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center" target="_blank" rel="noreferrer">
                             <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
                                 <div className="w-18 h-18 mb-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -85,17 +97,7 @@ export default function GamesPage() {
                             </div>
                             <div className="font-bold title text-neutral-300">Example</div>
                         </span>
-                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
-                            <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
-                                <div className="w-18 h-18 mb-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                        <rect fillOpacity={0} width="100" height="100"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div className="font-bold title text-neutral-300">Example</div>
-                        </span>
-                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center">
+                        <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center" target="_blank" rel="noreferrer">
                             <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
                                 <div className="w-18 h-18 mb-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
