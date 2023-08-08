@@ -85,7 +85,7 @@ export default function GamesPage() {
                                     </svg>
                                 </div>
                             </div>
-                            <div className="font-bold title text-green-600">TicTacToe</div>
+                            <div className="font-bold title text-green-300">TicTacToe</div>
                         </a>
                         <span href={ `${ window.location.protocol }//example.quibbble.com` } className="opacity-0 flex flex-col items-center" target="_blank" rel="noreferrer">
                             <div className="mb-1 w-20 h-20 p-3 overflow-hidden rounded-xl border-blue-500 border-2 box-border">
