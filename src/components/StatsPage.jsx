@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Footer from "./Footer";
+import { Footer } from "@quibbble/boardgame";
 import Navbar from "./Navbar";
 import { GetStats } from "../api/API";
 
@@ -31,13 +31,13 @@ export default function StatsPage() {
                 }))
                 setTotalCompleted(Object.keys(completed).reduce((curr, accu) => completed[accu] + curr, 0))
                 
-                let activeGames = response.data.GamesCurrent 
+                let activeGames = response.data.ActiveGames 
                 setActiveGames(Object.keys(activeGames).map(game => {
                     return {name: game, value: activeGames[game]}
                 }))
                 setTotalActiveGames(Object.keys(activeGames).reduce((curr, accu) => activeGames[accu] + curr, 0))
 
-                let activePlayers = response.data.PlayersCurrent 
+                let activePlayers = response.data.ActivePlayers 
                 setActivePlayers(Object.keys(activePlayers).map(game => {
                     return {name: game, value: activePlayers[game]}
                 }))

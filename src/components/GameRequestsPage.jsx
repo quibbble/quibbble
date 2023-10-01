@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import { Footer } from "@quibbble/boardgame";
 import Navbar from "./Navbar";
 
 export default function GameRequestsPage() {
