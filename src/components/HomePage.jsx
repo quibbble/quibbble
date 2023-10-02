@@ -12,7 +12,7 @@ export default function HomePage() {
                     <p className="text-2xl font-bold">Play Board Games Online With Friends</p>
                     <p className="text-xl font-light max-w-2xl italic">Play with friends on your phone, tablet, or computer all for free</p>
                     <Link to="/games">
-                        <button className="bg-blue-600 text-zinc-100 text-xl px-4 py-2 mt-4 title">Browse Games</button>
+                        <button className="bg-blue-600 text-zinc-100 italic px-4 py-2 mt-4 font-bold">Browse Games</button>
                     </Link>
                 </div>
             </div>
