@@ -4,12 +4,12 @@ import Navbar from "./Navbar";
 const GameButton = ({game, color, hidden, children}) => {
     return (
         <a className={ `flex flex-col items-center ${hidden ? "opacity-0 pointer-events-none" : ""}`} href={ `${ window.location.protocol }//${ game.toLowerCase() }.quibbble.com` } target="_blank" rel="noreferrer">
-            <div className={`rounded flex items-center justify-center mb-1 w-20 h-20 p-3 overflow-hidden border-${ color } border-2 box-border`}>
+            <div className={`rounded flex items-center justify-center mb-2 w-20 h-20 p-3 overflow-hidden border-${ color } border-2 box-border`}>
                 <div className="w-12 h-12">
                     { children }
                 </div>
             </div>
-            <div className={`font-bold title text-${ color }`}>{ game }</div>
+            <div className={`font-bold text-sm text-${ color }`}>{ game }</div>
         </a>
     )
 }
