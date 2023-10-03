@@ -52,7 +52,7 @@ export default function StatsPage() {
                 <Navbar />
                 <div className="w-full md:w-[75%] flex flex-col md:flex-row justify-between items-center mt-12">
                     <div className="w-48 mb-12 md:mb-0">
-                        <h1 className="w-full font-bold border-b">Games Completed</h1>
+                        <h1 className="w-full font-bold border-b">Games Created</h1>
                         <div className="w-full">
                             {
                                 gamesCreated.map(it => {
