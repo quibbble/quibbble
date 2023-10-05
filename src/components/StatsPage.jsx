@@ -50,41 +50,42 @@ export default function StatsPage() {
         <div className="flex flex-col items-center m-8 md:m-12">
             <div className="w-full max-w-2xl flex flex-col items-center">
                 <Navbar />
-                <div className="w-full md:w-[75%] flex flex-col md:flex-row justify-between items-center mt-12">
-                    <div className="w-48 mb-12 md:mb-0">
-                        <h1 className="w-full font-bold border-b">Games Created</h1>
+                <h1 className="text-2xl font-bold my-8">Statistics</h1>
+                <div className="w-full md:w-[72%] flex flex-col md:flex-row justify-between items-center">
+                    <div className="w-56 mb-8 md:mb-0 p-8 bg-zinc-900 rounded-md">
+                        <h1 className="w-full font-bold mb-4 text-indigo-500">Games Created</h1>
                         <div className="w-full">
                             {
-                                gamesCreated.map(it => {
+                                gamesCreated.map((it, i) => {
                                     return (
-                                        <div className="flex justify-between py-[0.15rem] px-2">
+                                        <div key={ i } className="flex justify-between py-[0.15rem] px-2">
                                             <div>{it.name}</div>
                                             <div>{it.value}</div>
                                         </div>
                                     )
                                 })
                             }
-                            <div className="flex justify-between font-bold border-t">
+                            <div className="text-indigo-500 flex justify-between font-bold mt-4">
                                 <div>Total</div>
                                 <div>{totalCreated}</div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="w-48 mb-12 md:mb-0">
-                        <h1 className="w-full font-bold border-b">Games Played</h1>
+                    <div className="w-56 mb-8 md:mb-0 p-8 bg-zinc-900 rounded-md">
+                        <h1 className="w-full font-bold mb-4 text-sky-500">Games Played</h1>
                         <div className="w-full">
                             {
-                                gamesPlayed.map(it => {
+                                gamesPlayed.map((it, i) => {
                                     return (
-                                        <div className="flex justify-between py-[0.15rem] px-2">
+                                        <div key={ i } className="flex justify-between py-[0.15rem] px-2">
                                             <div>{it.name}</div>
                                             <div>{it.value}</div>
                                         </div>
                                     )
                                 })
                             }
-                            <div className="flex justify-between font-bold border-t">
+                            <div className="text-sky-500 flex justify-between font-bold mt-4">
                                 <div>Total</div>
                                 <div>{totalPlayed}</div>
                             </div>
@@ -92,41 +93,41 @@ export default function StatsPage() {
                     </div>
                 </div>
 
-                <div className="w-full md:w-[75%] flex flex-col md:flex-row justify-between items-center md:mt-12">
-                    <div className="w-48 mb-12 md:mb-0">
-                        <h1 className="w-full font-bold border-b">Active Games</h1>
+                <div className="w-full md:w-[72%] flex flex-col md:flex-row justify-between items-center md:mt-8">
+                    <div className="w-56 mb-8 md:mb-0 p-8 bg-zinc-900 rounded-md">
+                        <h1 className="w-full font-bold mb-4 text-rose-500">Active Games</h1>
                         <div className="w-full">
                             {
-                                activeGames.map(it => {
+                                activeGames.map((it, i) => {
                                     return (
-                                        <div className="flex justify-between py-[0.15rem] px-2">
+                                        <div key={ i } className="flex justify-between py-[0.15rem] px-2">
                                             <div>{it.name}</div>
-                                            <div>{it.value}</div>
+                                            <div className={ `${ it.value > 0 ? "text-rose-500" : "" }` }>{it.value}</div>
                                         </div>
                                     )
                                 })
                             }
-                            <div className="flex justify-between font-bold border-t">
+                            <div className="text-rose-500 flex justify-between font-bold mt-4">
                                 <div>Total</div>
                                 <div>{totalActiveGames}</div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="w-48 mb-12 md:mb-0">
-                        <h1 className="w-full font-bold border-b">Active Players</h1>
+                    <div className="w-56 mb-8 md:mb-0 p-8 bg-zinc-900 rounded-md">
+                        <h1 className="w-full font-bold mb-4 text-amber-500">Active Players</h1>
                         <div className="w-full">
                             {
-                                activePlayers.map(it => {
+                                activePlayers.map((it, i) => {
                                     return (
-                                        <div className="flex justify-between py-[0.15rem] px-2">
+                                        <div key={ i } className="flex justify-between py-[0.15rem] px-2">
                                             <div>{it.name}</div>
-                                            <div>{it.value}</div>
+                                            <div className={ `${ it.value > 0 ? "text-amber-500" : "" }` }>{it.value}</div>
                                         </div>
                                     )
                                 })
                             }
-                            <div className="flex justify-between font-bold border-t">
+                            <div className="text-amber-500 flex justify-between font-bold mt-4">
                                 <div>Total</div>
                                 <div>{totalActivePlayers}</div>
                             </div>
@@ -135,7 +136,7 @@ export default function StatsPage() {
                 </div>
             </div>
 
-            <div className="mt-12 md:absolute md:bottom-12 md:flex md:flex-col md:items-center">
+            <div className="mt-8">
                 <Footer />
             </div>
         </div>
