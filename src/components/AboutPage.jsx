@@ -1,20 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown'
-import { useNavigate } from "react-router-dom";
 import remarkGfm from 'remark-gfm'
 import { Footer } from "@quibbble/boardgame";
 import Navbar from "./Navbar";
+import About from "./about.md"
 
 export default function AboutPage() {
 
     const [about, setAbout] = useState("")
 
-    useEffect(() => {
-        import("./about.md").then(res => {
-            fetch(res.default)
+    useLayoutEffect(() => {
+        fetch(About)
             .then(response => response.text())
             .then(text => setAbout(text))
-        })
     }, [])
 
     return (

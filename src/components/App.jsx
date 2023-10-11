@@ -6,7 +6,8 @@ import StatsPage from './StatsPage';
 import AboutPage from './AboutPage';
 
 export default function App() {
-  return (
+
+    return (
         <BrowserRouter>
             <Routes>
                 <Route exact path="/about" element={ <AboutPage /> } />
