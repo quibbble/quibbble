@@ -9,8 +9,8 @@ export default function HomePage() {
             <div className="w-full max-w-2xl">
                 <Navbar />
                 <div className="fade-in pt-12">
-                    <p className="text-2xl font-bold">Play Board Games Online With Friends</p>
-                    <p className="text-xl font-light max-w-2xl italic">Play with friends on your phone, tablet, or computer all for free</p>
+                    <p className="text-2xl font-bold">Board Games Online</p>
+                    <p className="text-xl font-light max-w-2xl">Play on your phone, tablet, or computer with no signup and no cost.</p>
                     <Link to="/games">
                         <button className="bg-blue-600 text-zinc-100 italic px-4 py-2 mt-4 font-bold">Browse Games</button>
                     </Link>
